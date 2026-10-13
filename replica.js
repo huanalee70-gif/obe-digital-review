@@ -1,0 +1,1 @@
+import {i as react,t as dom} from './framework-DjPHiq1u.js'; import Page from './page-Cl0bWD8w.js'; dom().hydrateRoot(document.body,react().createElement(Page));

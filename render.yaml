@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: obe-digital-review
+    runtime: static
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /privacy
+        destination: /privacy/index.html
+      - type: rewrite
+        source: /terms
+        destination: /terms/index.html
+      - type: rewrite
+        source: /accessibility
+        destination: /accessibility/index.html
+      - type: rewrite
+        source: /cookies
+        destination: /cookies/index.html
